@@ -134,6 +134,9 @@ git pull origin master
 
 当然我们也可以使用git 的clone命令，从远程克隆一个Reps，然后直接用vscode打开文件夹，
 VS Code 会自动识别各项配置。
+``` shell
+git clone https://github.com/xuanhun/vscode mycode
+```
 
 ### 持久化账号
 
