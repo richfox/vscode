@@ -146,6 +146,10 @@ git clone https://github.com/xuanhun/vscode mycode
 ``` shell
 git config --global credential.helper wincred
 ```
+我们也可以在vscode里改变git用户
+``` shell
+git config --global user.email "zws@example.com"
+```
 
 ## 小结
 
