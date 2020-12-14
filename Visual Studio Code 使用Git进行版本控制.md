@@ -148,6 +148,7 @@ git config --global credential.helper wincred
 ```
 我们也可以在vscode里改变git用户
 ``` shell
+git config --global user.name "zws"
 git config --global user.email "zws@example.com"
 ```
 
