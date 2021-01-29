@@ -101,7 +101,7 @@ VS Code 会检测文件冲突，并以<<<<<,>>>>,====和颜色区分出来。
 ``` shell
 git rm --cached <filename>
 ```
-取消文件夹
+如果要取消跟踪整个文件夹
 ``` shell
 git rm --cached <name>
 ```
