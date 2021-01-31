@@ -149,6 +149,20 @@ VS Code 会自动识别各项配置。
 git clone https://github.com/xuanhun/vscode mycode
 ```
 
+## 强制覆盖
+
+有些时候我们只想要git服务器中的最新版本的项目，对于本地的项目中修改不做任何理会，或者本地.git文件夹丢失，就需要用到强制覆盖，具体代码如下
+``` shell
+git fetch --all
+git reset --hard origin/master 
+git pull
+```
+第一个是：拉取所有更新，不同步；
+第二个是：本地代码同步线上最新版本(会覆盖本地所有与远程仓库上同名的文件)；
+第三个是：再更新一次
+这个操作有个好处，就是只可以放弃本地部分代码，如果用直接删除加clone，就要全部放弃了，而被git忽略的文件被放弃后无法用git找回
+
+
 ### 持久化账号
 
 远程连接git的问题解决了，如果你不想每次同步的时候都输入账号信息，可以全局存储账号，
@@ -159,8 +173,8 @@ git config --global credential.helper wincred
 ```
 我们也可以在vscode里改变git用户
 ``` shell
-git config --global user.name "zws"
-git config --global user.email "zws@example.com"
+git config --global user.name "test"
+git config --global user.email "test@example.com"
 ```
 
 ## 小结
