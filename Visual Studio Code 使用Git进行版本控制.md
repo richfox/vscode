@@ -177,7 +177,7 @@ git config --global user.name "test"
 git config --global user.email "test@example.com"
 ```
 不同的机器登录可能作为密码还需要输入 github personal access token，
-如果同步出现类似"terminal prompts disabled"的问题，重新生成token，参考https://stackoverflow.com/questions/68775869
+如果同步出现类似"terminal prompts disabled" 或者 "Failed to authenticate to git remote"的问题，重新生成token，然后重新登录输入新的token作为密码，参考https://stackoverflow.com/questions/68775869
 
 如出现类似"remote: Write access to repository not granted"，生成token的select scopes必须勾选"Full control of private repositories"
 
