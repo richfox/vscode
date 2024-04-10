@@ -150,7 +150,6 @@ VS Code 会自动识别各项配置。
 git clone https://github.com/xuanhun/vscode mycode
 ```
 如果是先有代码再建仓库，点击vscode中的Publish to GitHub按钮，按照提示操作即可
-![](屏幕截图 2024-04-10 225248.jpg)
 
 ## 强制覆盖
 
