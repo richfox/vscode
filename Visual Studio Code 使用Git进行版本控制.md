@@ -178,6 +178,10 @@ git config --global credential.helper wincred
 git config --global user.name "test"
 git config --global user.email "test@example.com"
 ```
+用这个命令可以查看git的global设置
+``` shell
+git config --global --list --show-origin
+```
 不同的机器登录可能作为密码还需要输入 github personal access token，
 如果同步出现类似"terminal prompts disabled" 或者 "Failed to authenticate to git remote"的问题，重新生成token，然后重新登录输入新的token作为密码，参考https://stackoverflow.com/questions/68775869
 
